@@ -57,6 +57,27 @@
     background-color: white;
     overflow: hidden;
   }
+    
+div.scrollmenu {
+  background-color: #333;
+  overflow: auto;
+  white-space: nowrap;
+  border-radius: 8px;
+}
+
+div.scrollmenu a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+ border-radius: 8px;
+}
+
+div.scrollmenu a:hover {
+  background-color: #777;
+ border-radius: 8px;
+}
 
   </style>
   <link rel="icon" type="image/png" href="/favicon.png" />
@@ -87,7 +108,15 @@
   <button onclick="play1()">
     Not Pro
   </button>
-
+<br>
+  <div>
+    <h2> Her er lesernes innlegg: </h2>
+    <br>
+  <div class="scrollmenu" width=400 length=100>
+  <a href="#jaja">Ingen leserinlegg enda. Send inn i Kontakt!</a>
+</div>
+ <br>
+  
   <div>
     <h2>Dagens recommendation: Legg ut denne siden på snapchat story,<br>
     og få ditt navn i "vedige personer" listen nedenfor.<br>
