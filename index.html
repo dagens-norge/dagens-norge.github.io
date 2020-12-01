@@ -102,10 +102,9 @@ div.scrollmenu a:hover {
   <script>
     function play() {
       var audio = new Audio("/nrk_bass.mp3");
-      audio.muted = false;
       audio.play();
     }
-    window.onload = play;
+    window.onscroll = play;
   </script>
 </head>
 <body>
