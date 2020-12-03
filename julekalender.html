@@ -104,9 +104,10 @@ div.scrollmenu a:hover {
 
     function popup(a) {
     var x = document.getElementById(a);
+    var btnx = document.getElementById('btn'+a);
      if (a == 1) {
       x.style.display = "block";
-      btn1.style.display = "none";
+      btnx.style.display = "none";
 } else if (a == 2) {
   alert(a);
 } else if (a == 3) {
