@@ -105,34 +105,9 @@ div.scrollmenu a:hover {
     function popup(a) {
     var x = document.getElementById(a);
     var btnx = document.getElementById('btn'+a);
-     if (a == 1) {
+ 
       x.style.display = "block";
       btnx.style.display = "none";
-} else if (a == 2) {
-  alert(a);
-} else if (a == 3) {
-  alert(a);
-} else if (a == 4) {
-  alert(a);
-} else if (a == 5) {
-  alert(a);
-} else if (a == 6) {
-  alert(a);
-} else if (a == 7) {
-  alert(a);
-} else if (a == 8) {
-  alert(a);
-} else if (a == 9) {
-  alert(a);
-} else if (a == 10) {
-  alert(a);
-} else if (a == 11) {
-  alert(a);
-} else if (a == 12) {
-  alert(a);
-} else if (a == 13) {
-  alert(a);
-}
 
     }
   </script>
@@ -159,18 +134,32 @@ div.scrollmenu a:hover {
     <div id="1">
       <h1> PRUT </h1>
     </div>
-    <script>
-          var y = document.getElementById(1);
-          y.style.display = "none";
-    </script>
-    <br>
-     <button onclick="popup(2)" >
+
+     <button onclick="popup(2)" id="btn2">
     Luke <br>
      2
   </button>
-   <button onclick="popup(3)">
+    
+    <div id="2">
+      <h1> PRUT 2 </h1>
+    </div>
+    
+   <button onclick="popup(3)" id="btn3">
     Luke <br>
-     1
+     3
   </button>
+  
+    <div id="3">
+      <h1> PRUT 3</h1>
+      
+    </div>
+        <script>
+          var y = document.getElementById(1);
+          y.style.display = "none";
+          var y = document.getElementById(2);
+          y.style.display = "none";
+          var y = document.getElementById(3);
+          y.style.display = "none";
+    </script>
   </body>
   </html>
