@@ -106,6 +106,7 @@ div.scrollmenu a:hover {
     var x = document.getElementById(a);
      if (a == 1) {
       x.style.display = "block";
+      btn1.style.display = "none";
 } else if (a == 2) {
   alert(a);
 } else if (a == 3) {
@@ -162,7 +163,7 @@ div.scrollmenu a:hover {
           y.style.display = "none";
     </script>
     <br>
-     <button onclick="popup(2)">
+     <button onclick="popup(2)" id="btn1">
     Luke <br>
      2
   </button>
