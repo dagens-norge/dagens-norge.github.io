@@ -101,7 +101,10 @@ div.scrollmenu a:hover {
   <title>Dagens Julekalender</title>
   
     <script>
-    function popup() {
+    function popup(luke) 
+     if (luke == 1) {
+  alert("Hello World");
+}
       var audio = new Audio("/nrk_bass.mp3");
       audio.play();
     }
@@ -121,7 +124,7 @@ div.scrollmenu a:hover {
       <h3>SPIS MASSE GODERI DA FOLKENS!</h3>
     </div>
     <br>
-   <button onclick="popup()">
+   <button onclick="popup(1)">
     Luke <br>
      1
   </button>
