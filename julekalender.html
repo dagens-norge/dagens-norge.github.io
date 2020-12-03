@@ -101,10 +101,11 @@ div.scrollmenu a:hover {
   <title>Dagens Julekalender</title>
   
     <script>
-  
+
     function popup(a) {
+    var x = document.getElementById(a);
      if (a == 1) {
-  alert(a);
+      x.style.display = "block";
 } else if (a == 2) {
   alert(a);
 } else if (a == 3) {
@@ -152,6 +153,15 @@ div.scrollmenu a:hover {
     Luke <br>
      1
   </button>
+    <br>
+    <div id="1">
+      <h1> PRUT </h1>
+    </div>
+    <script>
+          var y = document.getElementById(1);
+          y.style.display = "none";
+    </script>
+    <br>
      <button onclick="popup(2)">
     Luke <br>
      2
