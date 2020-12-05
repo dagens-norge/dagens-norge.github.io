@@ -103,12 +103,13 @@ div.scrollmenu a:hover {
     <script>
 
     function popup(a) {
+      if (realdate > a) {
     var x = document.getElementById(a);
     var btnx = document.getElementById('btn'+a);
- 
+  
       x.style.display = "block";
       btnx.style.display = "none";
-
+      }
     }
       
     function play2() {
@@ -116,6 +117,15 @@ div.scrollmenu a:hover {
     audio.play();
       
     }
+      
+    function date() {
+  var d = new Date();
+  var n = d.getUTCDate();
+      console.log(n)
+      return n;
+      
+    }
+   var realdate = date();
   </script>
   
   </head>
