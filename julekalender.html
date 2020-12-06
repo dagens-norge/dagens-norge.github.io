@@ -432,7 +432,7 @@ Klikk for Julestemning!
       
    <button onclick="popup(31)" id="btn31">
 Løsning (31 desember)
-   <img src="/locked.png" width="50" height="50" id="img24">
+   <img src="/locked.png" width="50" height="50" id="img31">
   </button>
   <br>
     <div id="31">
@@ -452,7 +452,10 @@ Løsning (31 desember)
             }
            }
             var y = document.getElementById(31);
+           var x = document.getElementById('img'+31);
             y.style.display = "none";
+            if (realdate >= 31) {
+              x.style.display = "none";
         </script>
     </head>
   </html>
