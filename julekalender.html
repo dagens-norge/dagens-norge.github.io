@@ -103,7 +103,7 @@ div.scrollmenu a:hover {
     <script>
 
     function popup(a) {
-      if (true) {
+      if (realdate >= a) {
     var x = document.getElementById(a);
     var btnx = document.getElementById('btn'+a);
   
@@ -406,7 +406,8 @@ Klikk for Julestemning!
   </button>
   <br>
     <div id="22">
-      <h1>Første bokstav i ordet som har blitt kåret til dagens ord flere ganger? (spør Noah for tips)</h1>
+      <h1>Første bokstav i ordet som har blitt kåret til dagens ord flere ganger? <br>
+        (spør Noah for tips)</h1>
       
     </div>
     
@@ -421,7 +422,7 @@ Klikk for Julestemning!
       
     </div>
     
-   <button onclick="popup(24)","play2()" id="btn24">
+   <button onclick="popup(24)" id="btn24">
     Luke <br>
      24
    <img src="/locked.png" width="50" height="50" id="img24">
@@ -434,10 +435,9 @@ Klikk for Julestemning!
       <h3>
         Bruk denne linken for å sende inn svaret ditt!
       </h3>
+    </a> <br>
         <h1>GOD JUL!</h1>
         <p>Sliter du fortsatt med å finne svaret? Spør om hjelp da vel!</p>
-    </a>
-      
     </div>
       
    <button onclick="popup(31)" id="btn31">
@@ -449,6 +449,9 @@ Løsning (31 desember)
       <h1> Dagens er ikke en avis!</h1>
       
     </div>
+   <a href="/index.html">
+    <img src="/back-arrow.png" alt="back-arrow" width="150" height="100" style="float:left; bottom:0; position:sticky;"></img>
+  </a>
   </body>
 
 <head>
