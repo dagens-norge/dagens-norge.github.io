@@ -142,7 +142,18 @@ div.scrollmenu a:hover {
   <button onclick="play2()" >
 Klikk for Julestemning!
   </button>
-      <h3>SPIS MASSE GODERI DA FOLKENS!</h3>
+      <br>
+      <h2> Slik spiller du: </h2>
+      <p> I hver luke ligger det et spørsmål som gir deg svar i form av en bokstav. <br>
+        Sammen danner disse en hel setning, <br>
+        som du sender inn i linken du får i luke 24.
+           Førstemann vil få en egen plass på forsiden, <br>
+            samt en personlig melding fra vår grunnlegger, Noah.<br>
+           Løsningen kommer på nyttårsaften, se nederste knapp.</p>
+      <h3>La den beste vinne!</h3>
+         PS! Blir svaret i en av lukene et tall, <br>
+        betyr dette tallet bokstaven i alfabetet. <br>
+        f. eks. 1=a 2=b osv.
     </div>
     <br>
     
@@ -418,6 +429,14 @@ Klikk for Julestemning!
   <br>
     <div id="24">
       <h1> PRUT 24</h1>
+      
+   <button onclick="popup(31)" id="btn31">
+Løsning (31 desember)
+   <img src="/locked.png" width="50" height="50" id="img24">
+  </button>
+  <br>
+    <div id="31">
+      <h1> Dagens er ikke en avis!</h1>
   </body>
 
 <head>
@@ -432,7 +451,8 @@ Klikk for Julestemning!
               x.style.display = "none";
             }
            }
-
+            var y = document.getElementById(31);
+            y.style.display = "none";
         </script>
     </head>
   </html>
