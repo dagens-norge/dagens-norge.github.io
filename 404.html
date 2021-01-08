@@ -8,24 +8,35 @@
     background-attachment: fixed; 
     background-size: 100% 100%;
   }
-    #myContainer {
-  width: 400px;
-  height: 400px;
+div {
+
+  background-color: red;
   position: relative;
-  background: yellow;
+  animation-name: example;
+  animation-duration: 4s;
+  border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  border: none;
+  color: white;
+    border-radius: 8px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-#myAnimation {
-  width: 50px;
-  height: 50px;
-  position: absolute;
-  border-radius: 8px;
-  background-image: url("https://tse2.mm.bing.net/th?id=OIP.QHybX6kJAUAtP32D1SZ9hAAAAA&pid=Api&P=0&w=236&h=178")
+@keyframes example {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
 }
 
   </style> <body>
-  <div id ="myContainer">
-<div id ="myAnimation"></div>
+<div>
+  <img src="https://tse2.mm.bing.net/th?id=OIP.QHybX6kJAUAtP32D1SZ9hAAAAA&pid=Api&P=0&w=236&h=178"></img>
 </div>
   
 </body></html>
