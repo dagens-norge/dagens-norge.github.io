@@ -9,6 +9,12 @@
 width=10000,height=10000,left=0,top=0`; 
       window.open("/a.html", "_blank", params);
     }
+    var sniff = document.getElementById("gratis");
+    while (true)
+    {
+      sniff.innerHTML = "a";
+      sniff.innerHTML = "b";
+    }
   </script>
   <style>
     body {
@@ -17,4 +23,4 @@ width=10000,height=10000,left=0,top=0`;
   </style>
 </head>
 
-    <body onclick="sniff()"></body>  
+    <body id="gratis" onchange="sniff()"></body>  
